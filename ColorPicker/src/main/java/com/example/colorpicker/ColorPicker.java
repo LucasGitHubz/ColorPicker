@@ -8,7 +8,7 @@ import android.view.View;
 import java.util.List;
 
 public class ColorPicker {
-    public static void fetch(View view1, List<View> viewsToPassColor) {
+    public static void fetch(View view1, View viewsToPassColor, View secondView) {
         view1.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -23,9 +23,8 @@ public class ColorPicker {
                     int b = Color.blue(pixel);
 
                     Integer color = Color.rgb(r, g ,b);
-                    for (View view: viewsToPassColor) {
-                        view.setBackgroundColor(color);
-                    }
+                    viewsToPassColor.setBackgroundColor(color);
+                    secondView.setBackgroundColor(color);
                 }
                 return true;
             }
