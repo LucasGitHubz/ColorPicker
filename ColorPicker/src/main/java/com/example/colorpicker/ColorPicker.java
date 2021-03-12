@@ -6,7 +6,9 @@ import android.view.MotionEvent;
 import android.view.View;
 
 public class ColorPicker {
-    public static void fetch(View view1, View view2) {
+    static Integer mIntColor;
+    static String mStringColor;
+    public static void fetch(View view1, View viewToPassColor, Integer intColor, String stringColor) {
         view1.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -21,7 +23,14 @@ public class ColorPicker {
                     int b = Color.blue(pixel);
 
                     Integer color = Color.rgb(r, g ,b);
-                    view2.setBackgroundColor(color);
+                    if (viewToPassColor != null) {
+                        viewToPassColor.setBackgroundColor(color);
+                    }
+                    if (intColor != null) {
+                        mIntColor = intColor;
+                        mIntColor = color;
+                    }
+                    mStringColor = stringColor;
                 }
                 return true;
             }
