@@ -5,10 +5,10 @@ import android.graphics.Color;
 import android.view.MotionEvent;
 import android.view.View;
 
+import java.util.List;
+
 public class ColorPicker {
-    static Integer mIntColor;
-    static String mStringColor;
-    public static void fetch(View view1, View viewToPassColor, Integer intColor, String stringColor) {
+    public static void fetch(View view1, List<View> viewsToPassColor) {
         view1.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -23,14 +23,9 @@ public class ColorPicker {
                     int b = Color.blue(pixel);
 
                     Integer color = Color.rgb(r, g ,b);
-                    if (viewToPassColor != null) {
-                        viewToPassColor.setBackgroundColor(color);
+                    for (View view: viewsToPassColor) {
+                        view.setBackgroundColor(color);
                     }
-                    if (intColor != null) {
-                        mIntColor = intColor;
-                        mIntColor = color;
-                    }
-                    mStringColor = stringColor;
                 }
                 return true;
             }
