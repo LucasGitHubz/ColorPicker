@@ -17,7 +17,7 @@ import android.widget.ImageView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class ColorControllerFragment extends DialogFragment {
-    FloatingActionButton floatingActionButton;
+    public FloatingActionButton floatingActionButton;
     Integer color = -1111111;
     ImageView rgbWheel;
     Button confirmColorButton;

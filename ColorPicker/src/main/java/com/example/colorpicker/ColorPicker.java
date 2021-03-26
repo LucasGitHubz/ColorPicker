@@ -25,7 +25,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class ColorPicker extends AppCompatActivity {
-    public void launch(View viewLauncher, FloatingActionButton floatingActionButton) {
+    /*public void launch(View viewLauncher, FloatingActionButton floatingActionButton) {
         viewLauncher.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,5 +44,5 @@ public class ColorPicker extends AppCompatActivity {
         test.floatingActionButton = floatingActionButton;
         DialogFragment dialogFragment = test;
         dialogFragment.show(ft, "dialog");
-    }
+    }*/
 }
