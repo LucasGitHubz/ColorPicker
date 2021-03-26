@@ -2,7 +2,6 @@ package com.example.colorpicker;
 
 import android.app.Activity;
 import android.app.DialogFragment;
-import android.content.ContextWrapper;
 import android.content.res.ColorStateList;
 import android.graphics.Bitmap;
 import android.graphics.Color;
