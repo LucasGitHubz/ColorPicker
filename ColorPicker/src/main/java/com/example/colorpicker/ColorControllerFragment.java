@@ -47,6 +47,8 @@ public class ColorControllerFragment extends DialogFragment {
         rgbWheel = v.findViewById(R.id.rgbWheel);
         confirmColorButton = v.findViewById(R.id.confirmColorBtn);
 
+        rgbWheel.setDrawingCacheEnabled(true);
+        rgbWheel.buildDrawingCache(true);
         rgbWheel.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
