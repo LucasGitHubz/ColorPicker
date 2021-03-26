@@ -20,7 +20,6 @@ public class ColorControllerFragment extends DialogFragment {
     Integer color = -1111111;
     ImageView rgbWheel;
     Button confirmColorButton;
-    Activity mActivity;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
