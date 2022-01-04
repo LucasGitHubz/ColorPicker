@@ -13,10 +13,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.example.colorpicker.FloatingButton;
 
 public class ColorControllerFragment extends DialogFragment {
-    public FloatingActionButton floatingActionButton;
+    public FloatingButton floatingActionButton;
     Integer color = -1111111;
     ImageView rgbWheel;
     Button confirmColorButton;
@@ -30,7 +30,6 @@ public class ColorControllerFragment extends DialogFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.color_picker_fragment, container, false);
         configureLayout(v);
-
         return v;
     }
 
@@ -72,7 +71,7 @@ public class ColorControllerFragment extends DialogFragment {
         confirmColorButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                floatingActionButton.setBackgroundTintList(ColorStateList.valueOf(color));
+                floatingActionButton.setColor(color);
                 dismiss();
             }
         });
