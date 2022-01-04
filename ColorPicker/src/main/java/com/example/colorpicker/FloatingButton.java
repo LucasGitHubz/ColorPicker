@@ -15,6 +15,9 @@ import androidx.annotation.Nullable;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class FloatingButton extends FloatingActionButton {
+    // purple 500
+    public int _defaultColor = Color.rgb(156, 39, 176);
+    
     public FloatingButton(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         launch(context);
@@ -32,10 +35,14 @@ public class FloatingButton extends FloatingActionButton {
     public void setColor(int color) {
         setBackgroundTintList(ColorStateList.valueOf(color));
     }
+    
+    public void resetColor() {
+        setColor(_defaultColor)
+    }
 
     void launch(Context context) {
         final Activity activity = (Activity) context;
-
+        resetColor()
         this.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
