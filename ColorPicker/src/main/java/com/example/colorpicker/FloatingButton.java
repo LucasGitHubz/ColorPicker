@@ -18,9 +18,14 @@ public class FloatingButton extends FloatingActionButton {
         super(context, attrs);
         launch(context);
     }
+    
     public FloatingButton(@NonNull Context context) {
         super(context);
         launch(context);
+    }
+    
+    public int getColor(int color) {
+        return getBackgroundTintList().getDefaultColor();
     }
 
     void launch(Context context) {
