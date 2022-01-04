@@ -1,5 +1,6 @@
 package com.example.colorpicker;
 
+import FloatingButton;
 import android.app.Activity;
 import android.app.DialogFragment;
 import android.content.res.ColorStateList;
@@ -16,7 +17,7 @@ import android.widget.ImageView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class ColorControllerFragment extends DialogFragment {
-    public FloatingActionButton floatingActionButton;
+    public FloatingButton floatingActionButton;
     Integer color = -1111111;
     ImageView rgbWheel;
     Button confirmColorButton;
