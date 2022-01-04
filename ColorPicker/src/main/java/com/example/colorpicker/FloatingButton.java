@@ -5,6 +5,7 @@ import android.app.DialogFragment;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Context;
+import android.content.res.ColorStateList;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -24,8 +25,12 @@ public class FloatingButton extends FloatingActionButton {
         launch(context);
     }
     
-    public int getColor(int color) {
+    public int getColor() {
         return getBackgroundTintList().getDefaultColor();
+    }
+    
+    public void setColor(int color) {
+        setBackgroundTintList(ColorStateList.valueOf(color));
     }
 
     void launch(Context context) {
