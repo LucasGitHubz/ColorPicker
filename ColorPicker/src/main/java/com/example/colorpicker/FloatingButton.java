@@ -37,7 +37,7 @@ public class FloatingButton extends FloatingActionButton {
     }
     
     public void resetColor() {
-        setColor(_defaultColor)
+        setColor(_defaultColor);
     }
 
     void launch(Context context) {
