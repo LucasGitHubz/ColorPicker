@@ -42,7 +42,7 @@ public class FloatingButton extends FloatingActionButton {
 
     void launch(Context context) {
         final Activity activity = (Activity) context;
-        resetColor()
+        resetColor();
         this.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
