@@ -1,6 +1,5 @@
 package com.example.colorpicker;
 
-import FloatingButton;
 import android.app.Activity;
 import android.app.DialogFragment;
 import android.content.res.ColorStateList;
@@ -14,7 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.example.FloatingButton;
 
 public class ColorControllerFragment extends DialogFragment {
     public FloatingButton floatingActionButton;
