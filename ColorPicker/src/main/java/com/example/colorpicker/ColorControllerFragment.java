@@ -71,7 +71,7 @@ public class ColorControllerFragment extends DialogFragment {
         _confirmColorButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                _floatingActionButton.setColor(_color);
+                floatingActionButton.setColor(_color);
                 dismiss();
             }
         });
