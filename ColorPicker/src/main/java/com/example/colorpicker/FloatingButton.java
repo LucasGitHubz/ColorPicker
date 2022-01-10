@@ -17,7 +17,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class FloatingButton extends FloatingActionButton {
     // purple 500
-    public int _defaultColor = Color.rgb(156, 39, 176);
+    private int _defaultColor = Color.rgb(156, 39, 176);
     
     public FloatingButton(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
