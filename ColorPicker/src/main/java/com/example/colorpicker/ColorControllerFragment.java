@@ -16,7 +16,7 @@ import android.widget.ImageView;
 import com.example.colorpicker.FloatingButton;
 
 public class ColorControllerFragment extends DialogFragment {
-    public FloatingButton _floatingActionButton;
+    public FloatingButton floatingActionButton;
     private int _color = -1111111;
     private ImageView _rgbWheel;
     private Button _confirmColorButton;
