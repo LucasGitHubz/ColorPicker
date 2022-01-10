@@ -17,9 +17,9 @@ import com.example.colorpicker.FloatingButton;
 
 public class ColorControllerFragment extends DialogFragment {
     public FloatingButton _floatingActionButton;
-    Integer color = -1111111;
-    ImageView rgbWheel;
-    Button confirmColorButton;
+    private int _color = -1111111;
+    private ImageView _rgbWheel;
+    private Button _confirmColorButton;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -43,17 +43,17 @@ public class ColorControllerFragment extends DialogFragment {
     }
 
     void configureLayout(View v) {
-        rgbWheel = v.findViewById(R.id.rgbWheel);
-        confirmColorButton = v.findViewById(R.id.confirmColorBtn);
+        _rgbWheel = v.findViewById(R.id.rgbWheel);
+        _confirmColorButton = v.findViewById(R.id.confirmColorBtn);
 
-        rgbWheel.setDrawingCacheEnabled(true);
-        rgbWheel.buildDrawingCache(true);
-        rgbWheel.setOnTouchListener(new View.OnTouchListener() {
+        _rgbWheel.setDrawingCacheEnabled(true);
+        _rgbWheel.buildDrawingCache(true);
+        _rgbWheel.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 Bitmap bitmap;
                 if (event.getAction() == MotionEvent.ACTION_DOWN || event.getAction() == MotionEvent.ACTION_MOVE) {
-                    bitmap = rgbWheel.getDrawingCache();
+                    bitmap = _rgbWheel.getDrawingCache();
 
                     int pixel = bitmap.getPixel((int)event.getX(), (int)event.getY());
 
@@ -61,14 +61,14 @@ public class ColorControllerFragment extends DialogFragment {
                     int g = Color.green(pixel);
                     int b = Color.blue(pixel);
 
-                    color = Color.rgb(r, g ,b);
-                    confirmColorButton.setBackgroundColor(color);
+                    _color = Color.rgb(r, g ,b);
+                    _confirmColorButton.setBackgroundColor(color);
                 }
                 return true;
             }
         });
 
-        confirmColorButton.setOnClickListener(new View.OnClickListener() {
+        _confirmColorButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 _floatingActionButton.setColor(color);
