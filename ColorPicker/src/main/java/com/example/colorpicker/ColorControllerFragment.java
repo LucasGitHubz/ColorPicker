@@ -62,7 +62,7 @@ public class ColorControllerFragment extends DialogFragment {
                     int b = Color.blue(pixel);
 
                     _color = Color.rgb(r, g ,b);
-                    _confirmColorButton.setBackgroundColor(color);
+                    _confirmColorButton.setBackgroundColor(_color);
                 }
                 return true;
             }
