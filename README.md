@@ -1,13 +1,20 @@
 # ColorPicker
 
-<kbd>
- <img src="https://image.noelshack.com/fichiers/2022/01/2/1641315996-img2.png"/>
-</kbd>
-<kbd>
- <img src="https://image.noelshack.com/fichiers/2022/01/2/1641317058-img3.png"/>
-</kbd>
+<table>
+ <tr>
+  <td>
+   <kbd>
+    <img src="https://image.noelshack.com/fichiers/2022/01/2/1641315996-img2.png"/ alt="ColorPicker présentation">
+   </kbd>
+  </td>
+  <td>
+   <kbd>
+    <img src="https://image.noelshack.com/fichiers/2022/01/2/1641317058-img3.png"/ alt="ColorPicker présentation">
+   </kbd>
+  </td>
+ </tr>
+</table>
 
-</br>
 </br>
 
 Ce dépôt contient _L'Application ColorPicker_ qui permet de générer un bouton flottant avec une couleur personnalisable.
