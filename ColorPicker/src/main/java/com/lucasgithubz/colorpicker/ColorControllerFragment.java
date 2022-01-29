@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.example.colorpicker.FloatingButton;
+import com.lucasgithubz.colorpicker.FloatingButton;
 
 public class ColorControllerFragment extends DialogFragment {
     public FloatingButton floatingActionButton;
