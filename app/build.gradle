@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.example.colorviewpicker"
+        applicationId "com.lucasgithubz.colorviewpicker"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
