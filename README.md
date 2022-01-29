@@ -30,7 +30,7 @@ Ce dépôt contient _L'Application ColorPicker_ qui permet de générer un bouto
 Dans votre layout ajouter le bouton : 
 
 ```
- <com.example.colorpicker.FloatingButton
+ <com.lucasgithubz.colorpicker.FloatingButton
         android:id="@+id/colorPickerButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
