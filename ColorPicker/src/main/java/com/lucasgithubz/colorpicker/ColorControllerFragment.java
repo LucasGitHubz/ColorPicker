@@ -1,4 +1,4 @@
-package com.example.colorpicker;
+package com.lucasgithubz.colorpicker;
 
 import android.app.Activity;
 import android.app.DialogFragment;
