@@ -21,8 +21,8 @@ Ce dépôt contient _L'Application ColorPicker_ qui permet de générer un bouto
 
 
 ## Procédure Installation
-1. Dans `app/build.gradle` ajouter la dépendance suivante : _implementation 'com.github.LucasGitHubz:ColorPicker:<Release Number>'_
-   Ou <Release Number> correspond à une des versions sur [cette](https://github.com/LucasGitHubz/ColorPicker/releases) page.
+1. Dans `app/build.gradle` ajouter la dépendance suivante : _implementation 'com.github.LucasGitHubz:ColorPicker:_`Release Number`'
+   Où `Release Number` correspond à une des versions sur [cette](https://github.com/LucasGitHubz/ColorPicker/releases) page.
 3. A la racine du projet dans le fichier `settings.gradle` ajouter dans `repositories {...}` : _maven { url 'https://jitpack.io' }_
 
 
@@ -30,7 +30,7 @@ Ce dépôt contient _L'Application ColorPicker_ qui permet de générer un bouto
 Dans votre layout ajouter le bouton : 
 
 ```
- <com.example.colorpicker.FloatingButton
+ <com.lucasgithubz.colorpicker.FloatingButton
         android:id="@+id/colorPickerButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>

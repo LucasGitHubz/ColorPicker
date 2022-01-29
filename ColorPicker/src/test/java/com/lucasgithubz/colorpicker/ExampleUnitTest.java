@@ -1,4 +1,4 @@
-package com.example.colorpicker;
+package com.lucasgithubz.colorpicker;
 
 import org.junit.Test;
 
