@@ -1,4 +1,4 @@
-package com.example.colorviewpicker;
+package com.lucasgithubz.colorviewpicker;
 
 import android.content.Context;
 
