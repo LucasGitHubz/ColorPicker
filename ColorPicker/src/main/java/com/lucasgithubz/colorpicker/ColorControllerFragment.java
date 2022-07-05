@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 
-
 public class ColorControllerFragment extends DialogFragment {
   public FloatingButton floatingActionButton;
   private int _color = -1111111;
